@@ -24,22 +24,22 @@ body {
 
 .recipe-content {
     display: flex;
+    gap: 20px;
 }
 
 .image {
-    flex:  1 1 100px;
-    margin-right: 20px;
+    flex:  1;
 }
 
-.image img {
-    width: 350px;
-    height: 350px;
+.recipe-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .details {
-    flex: 2 2 100px;
+    flex: 2;
 }
 
 .description {
