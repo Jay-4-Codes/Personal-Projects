@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessible Form</title>
+</head>
+<body>
+    <div class="main-container">
+        <form class="profile-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="What should we call you" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="john@gmail.com" class="error" required>
+                <span class="error-message">Email is already taken</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="xxxxxxxx">
+                    <button type="button" class="toggle-visibility">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="xxxxxxxx">
+                    <button type="button" class="toggle-visibility">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Update Profile</button>
+        </form>
+        <div class="profile-status">
+            <div class="progress-circle">
+                <div class="progress progress-75" data-percentage="75" data-fg="#8e44ad" data-bg="#bdc3c7">
+                    <span>75%</span>
+                </div>
+            </div>
+            <p>Profile Completeness</p>
+
+            <div class="checklist">
+                <ul>
+                    <li class="completed">Create Account</li>
+                    <li class="completed">Update Roadmap Progress</li>
+                    <li class="completed">Setup Public Profile</li>
+                    <li>Complete your first project</li>
+                    <li>Invite your Friends</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

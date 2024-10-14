@@ -1,0 +1,165 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+/* Form layout */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.profile-form input[type="email"] {
+    border-color: red;
+    color: red;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Password field with toggle button */
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 40px;
+}
+
+.toggle-visibility {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Profile Status section */
+.profile-status {
+    width: 35%;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/* Progress Bar */
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--fg) calc(var(--pgPercentage) * 1%), 
+        var(--bg) 0
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    font-size: 1.5em;
+    color: #121616;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.progress-75 {
+    --pgPercentage: 75;
+    --fg: #8e44ad;
+    --bg: #bdc3c7;
+}
+/* Checklist Section */
+.checklist {
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.checklist ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.checklist li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.checklist li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
