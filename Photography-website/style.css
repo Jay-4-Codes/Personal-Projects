@@ -255,7 +255,7 @@ footer {
     }
 
     .image-description {
-        font-size: 1.5rem;
+        font-size: 0.625rem;
     }
     
     .works-section__image-container,
@@ -293,9 +293,8 @@ footer {
         flex-direction: column;
     }
     .logo-text {
-        font-size: 2rem;
-        letter-spacing: 0.8rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
     }
 
     nav a {
@@ -311,12 +310,11 @@ footer {
 
     .text-container__head {
         letter-spacing: 1.8rem;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .text-container__description {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
     }
 
     /* Works and Services Images */
