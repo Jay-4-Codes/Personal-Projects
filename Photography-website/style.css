@@ -285,6 +285,16 @@ footer {
         font-size: 2rem; /* Reduce heading size */
     }
 
+
+    /* Remove container padding */
+    .main-container,
+    .hero-section,
+    .works-section,
+    .services-section,
+    footer {
+        padding: 0;
+    }
+    
     /* Header */
     header {
         flex-direction: column;
@@ -293,6 +303,7 @@ footer {
         font-size: 0.8rem;
         letter-spacing: 0.3rem; /* Less space between letters */
     }
+
 
     nav a {
         font-size: 1rem; /* Reduce nav font size */
