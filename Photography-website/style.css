@@ -276,7 +276,6 @@ footer {
     }
 }
 
-/* Responsive Styles for Small Screens (e.g., phones, 576px and below) */
 /* Responsive Styles for Small Screens (576px and below) */
 @media (max-width: 576px) {
 
@@ -285,16 +284,18 @@ footer {
         font-size: 2rem; /* Reduce heading size */
     }
 
-
     /* Remove container padding */
     .main-container,
     .hero-section,
     .works-section,
-    .services-section,
-    footer {
+    .services-section {
         padding: 0;
     }
-    
+
+    .hero-section,
+    .works-section {
+        margin-bottom: 4rem;
+    }
     /* Header */
     header {
         flex-direction: column;
@@ -312,7 +313,6 @@ footer {
     /* Hero Section */
     .hero-image {
         width: 100%;
-        max-width: 250px; /* Smaller max width */
         height: auto;
     }
 
@@ -331,14 +331,19 @@ footer {
     .works-section__description,
     .services-description {
         font-size: 1rem; /* Smaller text */
-        justify-content: space-around; /* Balance space */
+        justify-content: space-between; /* Balance space */
+    }
+
+    .works-section__image-container,
+    .services-image-container {
+        display: flex;
+        justify-content: space-between;
     }
 
     /* Works and Services Images */
     .works-image,
     .services-image-container > img {
         width: 100%;
-        max-width: 280px; /* Restrict image width further */
         height: auto;
     }
 
