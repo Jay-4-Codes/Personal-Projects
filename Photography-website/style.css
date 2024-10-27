@@ -277,15 +277,12 @@ footer {
 }
 
 /* Responsive Styles for Small Screens (e.g., phones, 576px and below) */
+/* Responsive Styles for Small Screens (576px and below) */
 @media (max-width: 576px) {
 
     /* General Scaling */
-    body {
-        font-size: 0.9rem; /* Further reduce font size */
-    }
-
     h2 {
-        font-size: 2.5rem; /* Smaller heading size */
+        font-size: 2rem; /* Reduce heading size */
     }
 
     /* Header */
@@ -293,51 +290,60 @@ footer {
         flex-direction: column;
     }
     .logo-text {
-        font-size: 1rem;
-        letter-spacing: 0.5rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.3rem; /* Less space between letters */
     }
 
     nav a {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Reduce nav font size */
     }
 
     /* Hero Section */
     .hero-image {
-        width: 375px;
-        max-width: 300px; /* Smaller max width */
-        height: 400px;
+        width: 100%;
+        max-width: 250px; /* Smaller max width */
+        height: auto;
     }
 
     .text-container__head {
-        letter-spacing: 1.8rem;
-        font-size: 1.5rem;
+        letter-spacing: 1.2rem;
+        font-size: 1.2rem; /* Reduce font size */
+        margin: 1rem 0; /* Add margin for spacing */
     }
 
     .text-container__description {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Smaller text */
+        line-height: 1.6rem; /* Adjust line height */
+    }
+
+    /* Works and Services Sections */
+    .works-section__description,
+    .services-description {
+        font-size: 1rem; /* Smaller text */
+        justify-content: space-around; /* Balance space */
     }
 
     /* Works and Services Images */
     .works-image,
     .services-image-container > img {
         width: 100%;
-        max-width: 300px; /* Further restrict image width */
-        height: 350px;
+        max-width: 280px; /* Restrict image width further */
+        height: auto;
     }
 
     /* Footer */
     .footer__description h3 {
-        font-size: 2rem;
-        letter-spacing: 1.5rem;
+        font-size: 1.5rem; /* Smaller heading size */
+        letter-spacing: 1rem; /* Reduced letter spacing */
     }
 
     .footer__description p {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Smaller paragraph size */
     }
 
     /* Footer Icons */
     .footer-icon,
     .instagram-icon-footer {
-        font-size: 2.2rem;
+        font-size: 1.8rem; /* Reduce icon size */
     }
 }
