@@ -201,6 +201,86 @@ footer {
 }
 
 /* Responsive Styles */
+@media (max-width: 1440px) {
+    /* Font size adjustments for larger screens */
+    h2 {
+        font-size: 3rem; /* Slightly smaller than the base desktop size */
+    }
+    
+    .text-container__description {
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+    }
+
+    /* Adjust padding for better spacing */
+    .main-container,
+    .hero-section,
+    .works-section,
+    .services-section {
+        padding: 2.5rem; /* Adds more padding for larger screens */
+    }
+
+    header {
+        padding: 2.5rem;
+        margin-bottom: 3rem; /* Adjust space below header for readability */
+    }
+
+    /* Image scaling for balance on large screens */
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .hero-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 1280px; /* Ensures content is centered within 1440px screen */
+        margin: 0 auto;
+    }
+
+    .text-container__head,
+    .text-container__description {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 600px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .works-image {
+        width: 450px;
+        height: auto;
+    }
+
+    /* Footer adjustments for balance */
+    footer {
+        padding: 4rem; /* Adds space in the footer for larger screens */
+    }
+
+    .footer__description h3 {
+        font-size: 2.8rem;
+        letter-spacing: 2.5rem;
+    }
+
+    .footer__description p {
+        font-size: 1.6rem;
+    }
+
+    .footer-icon,
+    .instagram-icon-footer {
+        font-size: 1.7rem;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     header {
        display: flex;
@@ -233,6 +313,7 @@ footer {
         width: 630px;
         height: 499px;
     }
+
     .text-container__head {
         font-family: "Italiana";
         writing-mode: horizontal-tb;
@@ -270,21 +351,18 @@ footer {
     /* Ensure images in the works section are full width on smaller screens */
     .works-image {
         width: 647px;
-        max-width: 100%; /* Ensures it doesn’t exceed screen width */
-        height: 400px; /* Ensures consistent height */
+        max-width: 100%; 
+        height: 400px;
         object-fit: cover;
     }
 }
 
 /* Responsive Styles for Small Screens (576px and below) */
 @media (max-width: 576px) {
-
-    /* General Scaling */
     h2 {
-        font-size: 2rem; /* Reduce heading size */
+        font-size: 2rem; 
     }
 
-    /* Remove container padding */
     .main-container,
     .hero-section,
     .works-section,
@@ -292,22 +370,21 @@ footer {
         padding: 0;
     }
 
-    .hero-section,
-    .works-section {
-        margin-bottom: 4rem;
-    }
     /* Header */
     header {
         flex-direction: column;
+        margin: 0;
     }
+
     .logo-text {
         font-size: 0.8rem;
-        letter-spacing: 0.3rem; /* Less space between letters */
+        letter-spacing: 0.3rem;
+        margin-bottom: 0.8rem;
     }
 
 
     nav a {
-        font-size: 1rem; /* Reduce nav font size */
+        font-size: 1rem; 
     }
 
     /* Hero Section */
@@ -316,22 +393,46 @@ footer {
         height: auto;
     }
 
+    .hero-section,
+    .works-section {
+        margin-bottom: 4rem;
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .text-container__head {
         letter-spacing: 1.2rem;
-        font-size: 1.2rem; /* Reduce font size */
-        margin: 1rem 0; /* Add margin for spacing */
+        font-size: 1.2rem; 
+        margin: 1rem 0; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem;
     }
 
     .text-container__description {
-        font-size: 1rem; /* Smaller text */
-        line-height: 1.6rem; /* Adjust line height */
+        font-size: 1rem;
+        line-height: 1.6rem;
     }
 
     /* Works and Services Sections */
     .works-section__description,
     .services-description {
-        font-size: 1rem; /* Smaller text */
-        justify-content: space-between; /* Balance space */
+        font-size: 0.5rem; 
+        justify-content: space-between; 
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .works-section__image-container,
@@ -349,17 +450,16 @@ footer {
 
     /* Footer */
     .footer__description h3 {
-        font-size: 1.5rem; /* Smaller heading size */
-        letter-spacing: 1rem; /* Reduced letter spacing */
+        font-size: 0.6rem; 
+        letter-spacing: 1rem; 
     }
 
     .footer__description p {
-        font-size: 1rem; /* Smaller paragraph size */
+        font-size: 0.5rem; 
     }
 
-    /* Footer Icons */
     .footer-icon,
     .instagram-icon-footer {
-        font-size: 1.8rem; /* Reduce icon size */
+        font-size: 1.4rem;
     }
 }
