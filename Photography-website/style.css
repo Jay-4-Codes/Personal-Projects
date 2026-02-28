@@ -43,6 +43,9 @@ header {
     letter-spacing: 1.5rem;
 }
 
+nav {
+    display: block;
+}
 nav ul {
     display: flex;
     gap: 0.825rem;
@@ -58,7 +61,7 @@ nav a {
     transition: border-bottom 0.3s ease;
 }
 
-.active, nav a:hover {
+nav a:hover {
     border-bottom: 2px solid #fff;
 }
 
@@ -95,9 +98,7 @@ nav a {
 .text-container__description {
     font-family: "Cormorant Garamond";
     font-weight: 500;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    margin-top: 13rem;
+    margin-top: 4rem;
 }
 
 .hero-image {
@@ -158,29 +159,27 @@ nav a {
 }
 
 /* Footer */
-footer {
+.footer-content {
     width: 100%;
     font-family: "Italiana";
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    gap: 1rem;
     background-color: #121212;
 }
 
 .footer__description h3 {
-    font-size: 3rem;
-    letter-spacing: 3rem;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    letter-spacing: clamp(0.5rem, 2vw, 2rem);
 }
 
 .footer__description p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    font-size: clamp(0.8rem, 1.5vw, 1.4rem);
 }
 
 .footer-icon,
 .instagram-icon-footer {
-    font-size: 1.5rem;
-    color: #e0e0e0;
+    font-size: clamp(1.2rem, 2vw, 2rem);
 }
 
 .footer-icon {
@@ -205,87 +204,6 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 1440px) {
-    /* Font size adjustments for larger screens */
-    h2 {
-        font-size: 3rem; /* Slightly smaller than the base desktop size */
-    }
-    
-    .text-container__description {
-        font-size: 2.2rem;
-        line-height: 3.5rem;
-    }
-
-    /* Adjust padding for better spacing */
-    .main-container,
-    .hero-section,
-    .works-section,
-    .services-section {
-        padding: 2.5rem; /* Adds more padding for larger screens */
-    }
-
-    header {
-        padding: 2.5rem;
-        margin-bottom: 3rem; /* Adjust space below header for readability */
-    }
-
-    /* Image scaling for balance on large screens */
-    .hero-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .hero-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        max-width: 1280px; /* Ensures content is centered within 1440px screen */
-        margin: 0 auto;
-    }
-
-    .text-container__head,
-    .text-container__description {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .hero-image {
-        width: 600px;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .works-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    }
-
-    /* Footer adjustments for balance */
-    footer {
-        padding: 4rem; /* Adds space in the footer for larger screens */
-    }
-
-    .footer__description h3 {
-        font-size: 2.8rem;
-        letter-spacing: 2.5rem;
-    }
-
-    .footer__description p {
-        font-size: 1.6rem;
-    }
-
-    .footer-icon,
-    .instagram-icon-footer {
-        font-size: 1.7rem;
-    }
-}
-
-
-
 @media (max-width: 768px) {
     header {
        display: flex;
@@ -341,7 +259,7 @@ footer {
     }
 
     .image-description {
-        font-size: 0.625rem;
+        font-size: 1rem;
     }
     
     .works-section__image-container,
