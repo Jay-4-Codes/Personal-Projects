@@ -130,9 +130,9 @@ nav a {
 }
 
 .works-image {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .section-links {
@@ -259,8 +259,9 @@ footer {
     }
 
     .works-image {
-        width: 450px;
-        height: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     }
 
     /* Footer adjustments for balance */
@@ -354,11 +355,10 @@ footer {
     }
     /* Ensure images in the works section are full width on smaller screens */
     .works-image {
-        width: 647px;
-        max-width: 100%; 
-        height: 400px;
-        object-fit: cover;
-    }
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
 }
 
 /* Responsive Styles for Small Screens (576px and below) */
